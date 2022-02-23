@@ -18,3 +18,15 @@ spring:
     platform: h2
     username: sa
     password:
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9010/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always    
